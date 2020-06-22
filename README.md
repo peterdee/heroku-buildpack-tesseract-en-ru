@@ -11,10 +11,11 @@ The first step consists in allowing your Heroku app to use multiple buildpacks. 
 1. Setup your app:
 ```shell script
 heroku buildpacks:set heroku/LANG
-heroku buildpacks:add https://github.com/pathwaysmedical/heroku-buildpack-tesseract
+heroku buildpacks:add https://github.com/peterdee/heroku-buildpack-tesseract-en-ru
 ```
 
 `LANG` is the language used by your app (e.g., `ruby`, `python`, or `nodejs`).
+
 A complete list of Heroku buildpacks can be found [here](https://devcenter.heroku.com/articles/buildpacks).
 
  2. You can use the `tesseract` binary in your Heroku app!
