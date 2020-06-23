@@ -10,11 +10,13 @@ The first step consists in allowing your Heroku app to use multiple buildpacks. 
 
 1. Setup your app:
 ```shell script
-heroku buildpacks:set heroku/LANG
-heroku buildpacks:add https://github.com/peterdee/heroku-buildpack-tesseract-en-ru
+heroku buildpacks:set heroku/LANG --app APP 
+heroku buildpacks:add https://github.com/peterdee/heroku-buildpack-tesseract-en-ru --app APP 
 ```
 
 `LANG` is the language used by your app (e.g., `ruby`, `python`, or `nodejs`).
+
+`APP` is the name of your application.
 
 A complete list of Heroku buildpacks can be found [here](https://devcenter.heroku.com/articles/buildpacks).
 
