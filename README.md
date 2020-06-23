@@ -2,6 +2,8 @@
 
 This package provides a custom Heroku buildpack providing the [Tesseract OCR](https://github.com/tesseract-ocr/tesseract) binary **(4.0)** and all the required libraries to Heroku apps. Training data for **English** and **Russian** languages included.
 
+You can see this buildpack in action at https://tesseract-demo.herokuapp.com
+
 This version is a modification of https://github.com/pathwaysmedical/heroku-buildpack-tesseract with Russian language support. 
 
 ### Configuration
